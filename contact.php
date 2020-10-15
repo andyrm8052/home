@@ -1,14 +1,14 @@
 <?php
+	if (isset($_POST['submit'])){
 	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['msg'];
+	$mailFrom = $_POST['email'];
+	$message = $_POST['message'];
 	
-	$email_body = "Name: $name . \n".
-				  "Email: $email . \n\n".
-				  $message . "\n";
 	$to = "arm65@njit.edu";
-	$headers .= "Reply-To: $email \r\n";
+	$headers = "From: ". $mailFrom;
+	$txt = "Email from " . $name.".\n\n" . $message; 
 	
-	mail($to, $headers);
-	header("Location: mywebsite.html");
+	mail($to, $txt, $headers);
+	header("Location: mywebsite.html?mailsend");
+{
 ?>
