@@ -155,6 +155,12 @@ header.sticky ul li a{
 	justify-content: space-between;
 }
 
+.content2{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
 /*.portfolio .content{
 	display: flex;
 	justify-content: center;
@@ -245,53 +251,14 @@ img{
 	max-width: 100%;
 }
 
-.formBox{
-	min-width: 20%;
-	display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.formBox form{
-	display: flex;
-	flex-direction: column;
-}
-
-.formBox form h3, .contactInfo h3{
-	font-size: 20px;
-	font-weight: 700;
-	margin-bottom: 10px;
-}
-
-.formBox form textarea{
-	min-height: 200px;
-}
-
-.formBox form input, .formBox form textarea{
-	margin-bottom: 20px;
-	padding: 15px;
-	font-size: 16px;
-	border: none;
-	outline: note;
-	background: #262626;
-	color: white;
-	resize: none;
-}
-
-.formBox form input::placeholder, .formBox form textarea::placeholder{
-	color: lightgrey;
-}
-
-.formBox form input[type="submit"]{
-	max-width: 100px;
-	background: #158;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	border-radius: 8px;
+#contactInfoID{
+	text-align: center;
 }
 
 .contactInfo{
-	min-width: 40%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .contactInfoBox{
@@ -437,6 +404,10 @@ img{
 		flex-direction: column;
 		align-items: center;
 	}
+	.content2{
+		flex-direction: column;
+		align-items: center;
+	}
 	.w50{
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -456,11 +427,6 @@ img{
 		font-size: 34px;
 		top: -175px;
 	}
-	form{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
 	.contactInfo{
 		display: flex;
 		justify-content: center;
@@ -469,10 +435,6 @@ img{
 	}
 	#contactInfoID{
 		text-align: center;
-	}
-	.formBox form textarea{
-		min-width: 225px;
-		
 	}
 }
 
