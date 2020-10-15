@@ -1,0 +1,489 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+section{
+	padding: 100px;
+}
+
+.banner{
+	position: relative;
+	min-height: 100vh;
+	background-color: #111;
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.banner img{
+	width: 20%;
+}
+
+.banner h2{
+	font-size: 3em;
+	font-weight: 500;
+	color: white;
+	line-height: 1.5em;
+}
+
+.banner h2 span{
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.banner h3{
+	font-size: 1.5em;
+	font-weight: 500;
+	color: white;
+}
+
+.aboutLink{
+	position: absolute;
+	background: #158;
+	display: inline-block;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+	border-radius: 8px;
+	right: 5%;
+	top: 15%;
+	box-shadow: 0 0px 10px rgba(255,255,255,0.3);
+}
+
+.aboutLink:hover{
+	color: #c0e1f0;
+	opacity: 0.6;
+	padding: 8px 25px;
+	right: 5.25%;
+	top: 15.25%;
+}
+
+header{
+	position: fixed;
+	background: rgba(0,0,0,0.7);
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 5px 20px rgba(255,255,255,0.15);
+	transition: 0.4s;
+}
+
+header.sticky {
+	background: white;
+	padding: 20px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+header .logo{
+	color: white;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;	
+	letter-spacing: 2px;
+}
+
+header.sticky .logo{
+	color : black;
+}
+
+header ul{
+	position: relative;
+	display: flex;
+}
+
+header ul li{
+	position: relative;
+	list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	color: white;
+	text-decoration: none;
+	font-weight: 550;
+}
+
+header.sticky ul li a{
+	color: black;
+}
+
+.portfolio{
+	position: relative;
+	background: #262626;
+}
+
+.heading{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: white;
+}
+
+.heading h2{
+	color: black;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.portfolio .heading h2{
+	color: white;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.content{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*.portfolio .content{
+	display: flex;
+	justify-content: center;
+}
+*/
+
+.contentBox h3, .contentBox p, .contentBox h4{
+	position: relative;
+	margin-left: 250px;
+	margin-right: 20px;
+}
+
+.contentBox h3{
+	margin-top: 0;
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.contentBox h4{
+	margin-top: 0;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.portfolioBox{
+	padding: 40px 20px;
+	max-width: 500px;
+	margin: 20px;
+	transition: 0.5s;
+}
+
+.portfolioBox a{
+	text-decoration: none;
+	color: white;
+}
+
+.portfolioBox a .overlay h2{
+	position: relative;
+	text-align: center;
+}
+
+.portfolioBox img{
+	width: 100%;
+	border: 3px solid grey;
+	transition: 0.5s;
+}
+
+.portfolio .content:hover > .portfolioBox{
+	opacity: 0.3;
+}
+
+.portfolio .content:hover > .portfolioBox:hover{
+	opacity: 1 !important;
+}
+
+
+.content .portfolioBox:hover h2 {
+	transform: scale(1.3);
+	text-shadow: 0 2px 5px black;
+}
+
+.content .portfolioBox:hover img{
+	border: 3px solid white;
+	border-radius: 50px;
+}
+
+.content .portfolioBox .overlay h2{
+	transition: 0.5s;
+}
+
+.overlay{
+	color: white;
+	text-shadow: 0 2px 4px black;
+}
+
+.w50{
+	min-width: 50%;
+	transition: 0.5s;
+}
+
+.w50 img{
+	margin-left: 100px;
+	box-shadow: 10px 10px 10px black;
+	border-radius: 10px;
+}
+
+img{
+	max-width: 100%;
+}
+
+.formBox{
+	min-width: 20%;
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formBox form{
+	display: flex;
+	flex-direction: column;
+}
+
+.formBox form h3, .contactInfo h3{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.formBox form textarea{
+	min-height: 200px;
+}
+
+.formBox form input, .formBox form textarea{
+	margin-bottom: 20px;
+	padding: 15px;
+	font-size: 16px;
+	border: none;
+	outline: note;
+	background: #262626;
+	color: white;
+	resize: none;
+}
+
+.formBox form input::placeholder, .formBox form textarea::placeholder{
+	color: lightgrey;
+}
+
+.formBox form input[type="submit"]{
+	max-width: 100px;
+	background: #158;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-radius: 8px;
+}
+
+.contactInfo{
+	min-width: 40%;
+}
+
+.contactInfoBox{
+	position: relative;
+	float: right;
+}
+
+.contactInfoBox .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.contactInfoBox .box .icon{
+	min-width: 40px;
+	padding-top: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 24px;
+}
+
+.contactInfoBox .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	flex-direction: column;
+	font-weight: 500;
+}
+
+.contactInfoBox .box .text h3{
+	font-weight: 500;
+	color: #139;
+	margin-bottom: 0;
+}
+
+.copyright{
+	background: #262626;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+/*Responsive*/
+@media (max-width: 991px){
+	header, header.sticky {
+		padding: 20px 50px;
+		z-index: 1000;
+	}
+	.menu{
+		position: fixed;
+		top: 80px;
+		left: 100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: white;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0,0,0,0.2)
+	}
+	.menu.pushed{
+		left: 0;
+	}
+	header ul li a{
+		color: black;
+		font-size: 24px;
+		margin: 20px;
+	}
+	.toggle{
+		width: 40px;
+		height: 40px;
+		background: url(menu.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	.toggle.pushed{
+		background: url(menu.png);
+		transform: scale(0.99);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 25px;
+		cursor: pointer;
+	}
+	header.sticky .toggle{
+		filter: invert(1);
+	}
+	section{
+		padding: 100px 50px;
+	}
+	.banner{
+		padding: 150px 50px 100px;
+	}
+	.banner h2{
+		font-size: 1.5em;
+		margin-left: 10px;
+	}
+	.banner h3{
+		font-size: 1em;
+		margin-left: 10px;
+	}
+	.aboutLink{
+		margin-top: 0;
+		padding: 10px 12px;
+		font-size: 14px;
+	}
+	.aboutLink:hover{
+		padding: 7px 8px;
+		right: 5.25%;
+		top: 15.25%;	
+	}
+	.heading h2{
+		font-size: 24px;
+		text-align: center;
+	}
+	
+	.contentBox h3{
+		margin-left: 0;
+		position: relative;
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	.contentBox h4{
+		margin-left: 0;
+		position: relative;
+		text-align: center;
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+	.contentBox p{
+		position: relative;
+		font-size: 18px;
+		text-align: center;
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
+	.content{
+		flex-direction: column;
+		align-items: center;
+	}
+	.w50{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.w50 img{
+		margin-left: 0;
+	}
+	.heading{
+		font-size: 20px;
+	}
+	.portfolio .heading h2{
+		font-size: 24px;
+	}
+	.overlay h2{
+		position: relative;
+		text-align: center;
+		font-size: 34px;
+		top: -175px;
+	}
+	form{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.contactInfo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	#contactInfoID{
+		text-align: center;
+	}
+	.formBox form textarea{
+		min-width: 225px;
+		
+	}
+}
+
+@media (max-width: 600px){
+	header, header.sticky{
+		padding: 20px 20px;
+	}
+	.banner{
+		padding: 150px 20px 100px;
+	}
+	section{
+		padding: 100px 20px;
+	}
+}

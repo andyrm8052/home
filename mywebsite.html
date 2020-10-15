@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Andy Marmolejos</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="javascript.js"></script>
+</head>
+<body>
+	<header>
+	<a href="#" class="logo">Portfolio</a>
+	<div class="toggle" onclick="toggleMenu();"></div>
+	<ul class="menu">
+	<li><a href="#home" onclick="toggleMenu();">Home</a></li>
+	<li><a href="#aboutMeLink" onclick="toggleMenu();">About</a></li>
+	<li><a href="#portfolioLink" onclick="toggleMenu();">Portfolio</a></li>
+	<li><a href="#contactLink" onclick="toggleMenu();">Contact</a></li>
+	</u>
+	</header>
+	
+	<section class="banner" id="home">
+	<div class="textBox">
+	<h2>Hello, my name is <br> <span> Andy Marmolejos.</span></h2>
+	<h3>WELCOME TO MY PORTFOLIO</h3>
+	</div>
+	<a href="Resume.zip" class="aboutLink" download>Resume</a>
+	</section>
+	<section class="about" id="aboutMeLink">
+		<div class="heading">
+			<h2>About Me</h2>
+		</div>
+		<div class="content">
+			<div class="contentBox">
+				<h3>My name is Andy Marmolejos</h3>
+				<h4>I'm a Computer Engineer and Web Developer</h4>
+				<p>I'm a student at New Jersey Institute of Technology.
+				I recently started this semester as a senior. I transfer
+				from Middlesex County College back in 2018 when I
+				received my Associates Degree in Engineering Science.<br>
+				</p>
+				<p><br>What motivated me to pursue a degree in the computer field
+				was when I was 9 years old. I had my first computer and it
+				for me it was the best piece of technology I ever had and seen.
+				From that time, I always wanted to become someone that one day
+				would create one of those pieces of technologies and change the world.
+				I really didn't have a plan in my high school years. I didn't know
+				exactly what I wanted but knew I that technology was the area that
+				interested me the most.<br></p>
+				<p><br>The moment I knew that education in the field of computer was
+				what I wanted; it was simply because of Elon Musk. He is changing the
+				world through technology. I want to be able and be a part of something
+				big that will change the world in a good way. Everything is advancing,
+				getting smarter and reaching new places; I want to be a part of that.
+				<br></p>
+				<p><br>I'm trying to expand my skills. I have knowledge in the software field using
+				C++, HTML, CSS and JavaScript. I have knowledge in the hardware field.
+				I have my own kit at home where I practice to build simple hardware design.
+				Designs that allow me to create using Arduino Uno and Raspberry Pi.
+				I enjoy art specially drawing. That's a reason why I like technology. You
+				can be creative and unique with your designs.
+				</p>
+			</div>
+			<div class="w50">
+				<img src="img1.jpg" class="img">
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="portfolioLink">
+		<div class="heading">
+			<h2>Portfolio</h2>
+			<p>Several skills I learned and projects I have worked on.</p>
+		</div>
+		<div class="content">
+			<div class="portfolioBox">
+			<a href="webdesign.html">
+				<img src="icon1.jpg">
+				<div class="overlay">
+					<h2>Web Design</h2>
+				</div>
+			</a>
+			</div>
+			<div class="portfolioBox">
+			<a href="#">
+				<img src="icon2.jpg">
+				<div class="overlay">
+				<h2>Graphics Design</h2>
+				</div>
+			</a>
+			</div>
+			<div class="portfolioBox">
+			<a href="#">
+				<img src="icon3.jpg">
+				<div class="overlay">
+				<h2>Art</h2>
+				</div>
+			</a>
+			</div>
+			<div class="portfolioBox">
+			<a href="#">
+				<img src="icon4.jpg">
+				<div class="overlay">
+				<h2>Hardware</h2>
+				</div>
+			</a>
+			</div>
+			<div class="portfolioBox">
+			<a href="#">
+				<img src="icon5.jpg">
+				<div class="overlay">
+				<h2>Software</h2>
+				</div>
+			</a>
+			</div>
+		</div>
+	</section>
+	
+		<section class="contact" id="contactLink">
+			<div class="heading">
+				<h2>Contact Me</h2>
+			</div>
+			<div class="content">
+				<div class="contactInfo">
+					<div class="contactInfoBox">
+						<h3 id="contactInfoID">Contact Information</h3>
+						<div class="box">
+							<div class="icon">
+								<i class="fa fa-map-marker"></i>
+							</div>
+							<div class="text">
+								<h3>Address</h3>
+								<p>302 Barclay St,<br> Perth Amboy, New Jersey,<br>08861</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="icon">
+								<i class="fa fa-phone"></i>
+							</div>
+							<div class="text">
+								<h3>Phone</h3>
+								<p>(732)-486-5142</p>
+							</div>
+						</div>
+						<div class="box">
+							<div class="icon">
+								<i class="fa fa-envelope-o"></i>
+							</div>
+							<div class="text">
+								<h3>Email</h3>
+								<p>arm65@njit.edu</p>
+							</div>
+						</div>	
+					</div>
+				</div>
+				<div class="formBox" id="formId">
+					<form action="contact.php" method="post" id="contactForm">
+						<h3>Message Me</h3>
+						<input type="text" name="name" placeholder="Full Name">
+						<input type="email" name="email" placeholder="Email">
+						<textarea placeholder="Enter Message" name="msg"></textarea>
+						<input type="submit" name="submit" value="Send">
+					</form>
+				</div>
+			</div>
+		</section>
+		<div class="copyright">
+			<p>Copyright © 2020 Andy Marmolejos</p>
+		</div>
+</body>
+</html>
