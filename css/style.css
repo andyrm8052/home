@@ -186,10 +186,10 @@ header.sticky ul li a{
 }
 
 .portfolioBox{
-	padding: 40px 20px;
-	max-width: 500px;
+	padding: 40px 0;
 	margin: 20px;
 	transition: 0.5s;
+	width: 17%;
 }
 
 .portfolioBox a{
@@ -197,43 +197,56 @@ header.sticky ul li a{
 	color: white;
 }
 
-.portfolioBox a .overlay h2{
+.anchor{
 	position: relative;
+	display: inline-block;
 	text-align: center;
+}
+
+.portfolioBox a .overlay h2{
+	margin: auto;
 }
 
 .portfolioBox img{
 	width: 100%;
 	border: 3px solid grey;
 	transition: 0.5s;
+	vertical-align: middle;
 }
 
-.portfolio .content:hover > .portfolioBox{
+.portfolio .content2:hover > .portfolioBox{
 	opacity: 0.3;
 }
 
-.portfolio .content:hover > .portfolioBox:hover{
-	opacity: 1 !important;
+.portfolio .content2:hover > .portfolioBox:hover{
+	opacity: 1.0;
 }
 
 
-.content .portfolioBox:hover h2 {
+.content2 .portfolioBox:hover h2 {
 	transform: scale(1.3);
 	text-shadow: 0 2px 5px black;
 }
 
-.content .portfolioBox:hover img{
+.content2 .portfolioBox:hover img{
+	transform: scale(1.25);
 	border: 3px solid white;
-	border-radius: 50px;
+	border-radius: 40px;
 }
 
-.content .portfolioBox .overlay h2{
+.content2 .portfolioBox .overlay h2{
 	transition: 0.5s;
 }
 
 .overlay{
 	color: white;
 	text-shadow: 0 2px 4px black;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
 }
 
 .w50{
@@ -408,6 +421,12 @@ img{
 		flex-direction: column;
 		align-items: center;
 	}
+	.content2 img{
+		width: 100%;
+	}
+	.portfolioBox{
+		width: 60%;
+	}
 	.w50{
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -425,7 +444,6 @@ img{
 		position: relative;
 		text-align: center;
 		font-size: 34px;
-		top: -175px;
 	}
 	.contactInfo{
 		display: flex;
