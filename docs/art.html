@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Web Design</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="./js/javascript.js"></script>
+</head>
+<body>
+	<header>
+	<a href="#" class="logo">Portfolio</a>
+	<div class="toggle" onclick="toggleMenu();"></div>
+	<ul class="menu">
+	<li><a href="mywebsite.html" onclick="toggleMenu();">Home</a></li>
+	<li><a href="#aboutMeLink" onclick="toggleMenu();">About</a></li>
+	<li><a href="#portfolioLink" onclick="toggleMenu();">Works</a></li>
+	<li><a href="mywebsite.html #portfolioLink" onclick="toggleMenu();">Portfolio</a></li>
+	</u>
+	</header>
+	
+	<section class="banner" id="home">
+	<div class="textBox blur">
+	<h2><span> Art. </span></h2>
+	<h3>WELCOME TO MY ART PORTFOLIO</h3>
+	</div>
+	</section>
+	
+	<section class="about" id="aboutMeLink">
+		<div class="heading blur">
+			<h2> About</h2>
+		</div>
+		<div class="content blur" id="About">
+			<div class="contentBox">
+				<h3>Art</h3>
+				<p>This is one of my hobbies and my passion one.
+				Art for me means a lot because I can express myself
+				in anyway possible ways through it. I've been drawing since
+				I was 9 years old. My style of drawing is diverse. I can
+				draw digitally and traditionally. Although, I have a lot
+				to learn as I've been practicing with color pencils and makers.
+				I'm also practicing with digital sculting and much more.
+				This is where my creativity shines.</p>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio" id="portfolioLink">
+		<div class="heading blur">
+			<h2>Portfolio</h2>
+			<p>My work.</p>
+		</div>
+		<div class="content2 blur">
+			<div class="portfolioBox">
+			<a href="#portfolioLink" class="anchor" onclick="toggle()" id="img-1">
+				<img src="../img/black_panther.jpg">
+				<div class="overlay">
+				<h5>Black Panther - Chadwick Boseman</h5>
+				</div>
+			</a>
+			</div>
+			<div class="portfolioBox">
+			<a href="#portfolioLink" class="anchor" onclick="toggle()" id="img-2">
+				<img src="../img/andrew_lincoln.jpg">
+				<div class="overlay">
+				<h5>Andrew Lincoln</h5>
+				</div>
+			</a>
+			</div>
+			<div class="portfolioBox">
+			<a href="#portfolioLink" class="anchor" onclick="toggle()" id="img-3">
+				<img src="../img/daryl_dixon.jpg">
+				<div class="overlay">
+				<h5>Daryl Dixon - Norman Reedus</h5>
+				</div>
+			</a>
+			</div>
+			<div class="portfolioBox">
+			<a href="#portfolioLink" class="anchor" onclick="toggle()" id="img-4">
+				<img src="../img/venom.jpg">
+				<div class="overlay">
+				<h5>Venom</h5>
+				</div>
+			</a>
+			</div>
+			<div class="portfolioBox">
+			<a href="#portfolioLink" class="anchor" onclick="toggle()" id="img-5">
+				<img src="../img/monster_3d.jpg">
+				<div class="overlay">
+				<h5>Monster 3D Sculpture</h5>
+				</div>
+			</a>
+			</div>
+		</div>
+		<div id="popup">
+			<a href="#portfolioLink" class="anchor" onclick="toggle()">
+			<img src="../img/black_panther.jpg" class="img-1">
+			<img src="../img/andrew_lincoln.jpg" class="img-2">
+			<img src="../img/daryl_dixon.jpg" class="img-3">
+			<img src="../img/venom.jpg" class="img-4">	
+			<img src="../img/monster_3d.jpg" class="img-5">
+			</a>
+		</div>
+	</section>
+	<br>
+	<div class="copyright blur" style="background: #fff; margin: 50px 0">
+			<p style="color: black">Copyright © 2020 Andy Marmolejos</p>
+		</div>
+</body>
+</html>
