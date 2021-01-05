@@ -233,7 +233,7 @@ h5{  /*NEW*/
 	margin-top: 40px;
 }
 
-.overlay h5{
+#softwareOverlay h5{
 	border-color: lightgrey;
 	border-style: solid;
 	border-width: 2px 0px;
@@ -404,6 +404,10 @@ h5{  /*NEW*/
 	top: 0;
 	bottom: 0;
 	display: flex;
+}
+
+#overlayContent{
+	position: absolute;
 }
 
 .content .w50{
