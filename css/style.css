@@ -229,11 +229,11 @@ h5{  /*NEW*/
 	text-align: left;
 }
 
-.softwareText{
+.contentText{
 	margin-top: 40px;
 }
 
-#softwareOverlay h5{
+#listOverlay h5{
 	border-color: lightgrey;
 	border-style: solid;
 	border-width: 2px 0px;
